@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "zchat-ui": {
+    "zchat-gui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/zchat-ui",
+            "outputPath": "dist/zchat-gui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "zchat-ui:build:production"
+              "browserTarget": "zchat-gui:build:production"
             },
             "development": {
-              "browserTarget": "zchat-ui:build:development"
+              "browserTarget": "zchat-gui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "zchat-ui:build"
+            "browserTarget": "zchat-gui:build"
           }
         },
         "test": {

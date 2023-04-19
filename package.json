@@ -1,5 +1,5 @@
 {
-  "name": "zchat-ui",
+  "name": "zchat-gui",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
