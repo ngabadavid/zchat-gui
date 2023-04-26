@@ -1,0 +1,64 @@
+.zchat-chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 100%;
+
+    .zchat-chat-header-left-end {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: green;
+
+        .zchat-chat-header-picture {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 66px;
+            height: 50px;
+
+            .zchat-profil-picture {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+            }
+        }
+
+        .zchat-chat-header-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex: 1;
+            height: 62px;
+            width: calc(100% - 64px);
+
+            .zchat-chat-header-content-first-row {
+                .zchat-sender {
+                    @extend #{'.fw-bold'};
+                    //text-align: center;
+                }
+            }
+
+            .zchat-chat-header-content-second-row {
+                padding-right: 12px;
+
+                .zchat-description {
+                    //text-align: center;
+                }
+            }
+        }
+    }
+
+    .zchat-chat-header-right-end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+
+        .zchat-chat-header-button {
+            margin-right: 6px;
+        }
+    }
+}
